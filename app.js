@@ -63,6 +63,7 @@ let showSlide = slideNumber => {
         slide2.style.order = 1
         slide1.style.order = 3  
     } 
+    hideDescription();
     seeDescriptionButton.style.display = 'block';
     hideDescriptionButton.style.display = 'none';
 }
@@ -106,11 +107,17 @@ let changeSlideLeft = () => {
 
 let showDescription = () => {
     if(activeSlideNumber === 1) {
-        slideDes1.style.display = 'block';
+        slide1.style.display = 'none';
+        slideDes1.style.display = 'block'
+        slideDes1.style.order = 2;
     } else if (activeSlideNumber === 2) {
+        slide2.style.display = 'none'
         slideDes2.style.display = 'block';
+        slideDes2.style.order = 2;
     } else if (activeSlideNumber === 3) {
+        slide3.style.display = 'none'
         slideDes3.style.display = 'block';
+        slideDes3.style.order = 2;
     }
     seeDescriptionButton.style.display = 'none';
     hideDescriptionButton.style.display = 'block';
@@ -120,6 +127,13 @@ let hideDescription = () => {
     slideDes1.style.display = 'none';
     slideDes2.style.display = 'none';
     slideDes3.style.display = 'none';
+    if(activeSlideNumber === 1) {
+        slide1.style.display = 'block';
+    } else if(activeSlideNumber === 2) {
+        slide2.style.display = 'block';
+    } else if(activeSlideNumber === 3) {
+        slide3.style.display = 'block';
+    }
     seeDescriptionButton.style.display = 'block';
     hideDescriptionButton.style.display = 'none';
 }

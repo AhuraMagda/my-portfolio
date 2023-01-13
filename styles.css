@@ -204,6 +204,11 @@ img.dot {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.about-me p {
+    width: 50%;
 }
 
 /* Contact */
@@ -212,4 +217,5 @@ img.dot {
     justify-content: center;
     align-items: center;
     background-color: rgb(206, 97, 83);
+    flex-direction: column;
 }
