@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Main</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>PL / EN</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="intro" class="intro">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h1>Hi! My name is Magda</h1>
+                        <h2>Welcome to my page</h2>
+                    </div>
+                    <img id="logo" src="./images/logo.png" alt="logo with a snake and flowers">
+                </div>
+                <figure>
+                    <figcaption>look at my projects</figcaption>
+                    <a href="#projects"><img id="arrow" src="./images/arrow.png" alt="arrow down"></a>
+                </figure>
+            </section>
+
+            <section id="projects" class="projects">
+                <h3>My projects</h3>
+                <div class="slider" id="slider">
+                    <img class="dot" id="dot-left" src="./images/dot.png" alt="">
+                    <img id="slide1" src="./images/project1.jpg" alt="">
+                    <img id="slide2" class="active" src="./images/project2.jpg" alt="">
+                    <img id="slide3" class="slide3" src="./images/project3.jpg" alt="">
+                    <img class="dot" id="dot-right" src="./images/dot.png" alt="">
+                </div>
+                <div class="under-the-slide">
+                    <p id="description">see description</p>
+                    <p id="slide-des1">AAA</p>
+                    <p id="slide-des2">BBB</p>
+                    <p id="slide-des3">CCC</p>
+                </div>
+            </section>
+
+            <section id="about-me" class="about-me">
+                <h3>About me</h3>
+                <h4>Who am I?</h4>
+                <p>blablabla</p>
+                <h4>Skills</h4>
+                <p>JS | HTML | CSS | GIT | REACT</p>
+            </section>
+
+            <section id="contact" class="contact">
+                <h3>Contact</h3>
+                <p>Contact me on blalblbalbla</p>
+            </section>
+            
+        </main>
+
+        <script src="app.js"></script>
+    </body>
+</html>
