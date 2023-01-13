@@ -180,12 +180,22 @@ img.dot {
     order: 2 !important;
 }
 
+#hide-description {
+    display: none;
+}
+
 #slide-des2, #slide-des3 {
     display: none;
 }
 
 #slide-des1 {
     display: none;
+}
+
+.under-the-slide {
+    margin-top: 10px;
+    background-color: white;
+    width: 50%;
 }
 
 /* About Me */

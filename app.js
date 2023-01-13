@@ -10,7 +10,8 @@ const slide3 = document.getElementById('slide3');
 const leftDot = document.getElementById('dot-left');
 const rightDot = document.getElementById('dot-right');
 
-const description = document.getElementById('description');
+const seeDescriptionButton = document.getElementById('see-description');
+const hideDescriptionButton = document.getElementById('hide-description')
 
 const slideDes1 = document.getElementById('slide-des1');
 const slideDes2 = document.getElementById('slide-des2');
@@ -62,6 +63,8 @@ let showSlide = slideNumber => {
         slide2.style.order = 1
         slide1.style.order = 3  
     } 
+    seeDescriptionButton.style.display = 'block';
+    hideDescriptionButton.style.display = 'none';
 }
 
 let showSlide1 = () => {
@@ -109,10 +112,21 @@ let showDescription = () => {
     } else if (activeSlideNumber === 3) {
         slideDes3.style.display = 'block';
     }
+    seeDescriptionButton.style.display = 'none';
+    hideDescriptionButton.style.display = 'block';
 };
+
+let hideDescription = () => {
+    slideDes1.style.display = 'none';
+    slideDes2.style.display = 'none';
+    slideDes3.style.display = 'none';
+    seeDescriptionButton.style.display = 'block';
+    hideDescriptionButton.style.display = 'none';
+}
 
 rightDot.addEventListener('click', changeSlideRight)
 leftDot.addEventListener('click', changeSlideLeft)
 
-description.addEventListener('click', showDescription)
+seeDescriptionButton.addEventListener('click', showDescription)
+hideDescriptionButton.addEventListener('click', hideDescription)
 
