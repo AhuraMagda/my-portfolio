@@ -192,19 +192,19 @@ img.dot {
     display: none;
 }
 
-.under-the-slide {
-    margin-top: 10px;
-    background-color: white;
-    width: 50%;
-}
-
 /* About Me */
 .about-me {
     background-color: rgb(120, 206, 120);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+.about-me div {
+    width: 40%;
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .about-me p {
