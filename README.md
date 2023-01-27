@@ -1,6 +1,6 @@
 # My portfolio
 
-This is a website portfolioi.
+It is a website portfolio.
 
 ## Description
 
