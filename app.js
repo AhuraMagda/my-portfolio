@@ -7,7 +7,7 @@ const arrow = document.querySelector('figure')
 // znika duża grafika i przesuwa się na bok
 const introChange = () => {
     introText.style.display = 'block'
-    logo.style.height = '200px'
+    logo.style.height = '300px'
 }
 
 // tekst wyświetla się po obrazku
@@ -20,9 +20,11 @@ const arrowShow = () => {
     arrow.style.visibility = 'visible';
 }
 
+
 setTimeout(introChange, 4000)
 setTimeout(textVisibility, 5100);
 setTimeout(arrowShow, 6100)
+
 
 
 // PROJECTS
